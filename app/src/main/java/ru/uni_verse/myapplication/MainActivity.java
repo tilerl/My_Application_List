@@ -28,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
         mPeople.add(new Person("Adam Allen", "23", R.drawable.adam));
         mPeople.add(new Person("Brian Benjamen", "44", R.drawable.brian));
         mPeople.add(new Person("Charles Clive", "32", R.drawable.charles));
+        mPeople.add(new Person("Dennis David", "42", R.drawable.adam));
+        mPeople.add(new Person("Elijah Ellison", "19", R.drawable.brian));
+        mPeople.add(new Person("Frederik Franklin", "26", R.drawable.charles));
+        mPeople.add(new Person("Geralt Gerry", "40", R.drawable.adam));
+        mPeople.add(new Person("Henry Hudson", "39", R.drawable.brian));
+        mPeople.add(new Person("Ivan Idaho", "32", R.drawable.charles));
+
+        RVAdapter adapter = new RVAdapter(mPeople);
+        rv.setAdapter(adapter);
     }
 
     @Override
